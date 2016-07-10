@@ -19,6 +19,8 @@ body {
 
 .notes li {
 	display:inline-block;
+
+
 }
 
 .note {
@@ -32,6 +34,7 @@ body {
 
 	height:18em;
 	width:11em;
+	border-radius: .3em;
 }
 
 .note:hover {
