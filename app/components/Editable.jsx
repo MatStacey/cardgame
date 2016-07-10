@@ -4,7 +4,6 @@ import classnames from 'classnames';
 
 export default ({editing, value, onEdit, className, ...props}) => {
 	if(editing) {
-		console.log(onEdit);
 		if (onEdit) {
 			return <Edit 
 				className={className}
@@ -22,7 +21,7 @@ export default ({editing, value, onEdit, className, ...props}) => {
 
 class Edit extends React.Component {
 	render() {
-		const {className, value, ...props} = this.props;
+		const {className, value, onEdit, ...props} = this.props;
 
 		return <input
 			type="text"
@@ -30,6 +29,7 @@ class Edit extends React.Component {
 			defaultValue={value}
 			onBlur={this.finishEdit}
 			onKeyPress={this.checkEnter}
+
 			{...props} />;
 	}
 	checkEnter = (e) => {

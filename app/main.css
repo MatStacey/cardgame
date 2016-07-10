@@ -29,17 +29,23 @@ body {
 	margin-right: 0.5em;
 	padding: 0.5em;
 
-	background-color: #fdfdfd;
 	box-shadow: 0 0 0.3em .03em rgba(0,0,0,.3);
 
 	height:18em;
 	width:11em;
 	border-radius: .3em;
+
+	background-color: #CCC;
 }
 
 .note:hover {
 	box-shadow: 0 0 0.3em .03em rgba(0,0,0,.7);
+	transition: .6s;
+	background-color: #999;
+}
 
+.note:hover .delete {
+	background-color: #999;
 	transition: .6s;
 }
 
@@ -57,7 +63,7 @@ body {
 
 	padding: 0;
 
-	background-color: #fdfdfd;
+	background-color: #CCC;
 	border: none;
 
 	cursor: pointer;
